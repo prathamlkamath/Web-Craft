@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <h1>QR Code Generator</h1>
+
+    <div id="qrcode"></div>
+
+    <script>
+        // Function to generate QR code
+        function generateQRCode(text) {
+            const qrcode = new QRCode(document.getElementById("qrcode"), {
+                text: text,
+                width: 128,
+                height: 128
+            });
+        }
+
+        // Example: generate QR code for a URL
+        const urlToEncode = "https://contact-ae302-default-rtdb.firebaseio.com/";
+        generateQRCode(urlToEncode);
+    </script>
+</body>
+</html>

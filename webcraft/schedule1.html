@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule</title>
+  <style>
+    /* Body styles */
+    body {
+      font-family: sans-serif;
+      background-color: #fff;
+      position: relative;
+    }
+
+    /* Video background */
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        -webkit-filter: brightness(0.7);
+        filter: brightness(0.7);
+      }
+    }
+
+    /* Header styles */
+    header {
+      background-color: #2196F3;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0;
+    }
+
+    /* Container styles */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    /* Dress card styles */
+    .dress-card {
+      width: 250px;
+      background-color: #fff;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: relative;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .dress-card.is-hidden {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    .dress-card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Slide animation styles */
+    .dress-card-animation {
+      animation-name: slide-in-up;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes slide-in-up {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Dress card img styles */
+    .dress-card img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    /* Dress card h2 styles */
+    .dress-card h2 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    /* Dress card p styles */
+    .dress-card p {
+      color: #666;
+    }
+
+    /* Details button styles */
+    .dress-card button {
+      background-color: #2196F3;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 3px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Event timing styles */
+    .event-timing {
+      font-size: 12px;
+      color: #999;
+      margin-top: 10px;
+    }
+
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 768px) {
+      .dress-card {
+        width: 200px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .dress-card {
+        width: 150px;
+      }
+    }
+    </style>
+    <header>
+        <h1>Schedule</h1>
+    </header>
+    <form action="./try.html">
+    <div class="container">
+        <div class="dress-card" id="ppk">
+            <img src="./task1.jpeg" height="100"  alt="Dress 1">
+            <h2>ElectroWiz</h2>
+            <br>
+            <p> </p>
+            <a href="./dressk1.html"class="dress-card" id="kku">Details</a>
+            
+        </div>
+        <div class="dress-card" id="zyx">
+            <img src="./task2.png" height="100" alt="Dress 2">
+            
+            <h2>WattQuest</h2>
+            <br>
+            <p></p>
+                <a href="./dressk2.html"class="dress-card" id="kku">Details</a>
+        </div>
+        <div class="dress-card" id="pratham">
+            <img src="./task3.jpeg" alt="Dress 3">
+            <h2> Code
+                Troopers
+                Code Rush
+                 </h2>
+            <p></p>
+            <a href="./dressk3.html"class="dress-card" id="kku">Details</a>
+            
+        </div>
+        <div class="dress-card" id="pk">
+            <img src="./task4.jpeg" alt="Dress 3">
+            <h2>BugBane
+                Brawl
+                </h2>
+            <br>
+            <p></p>
+            
+            
+            <a href="./dress4.html"class="dress-card" id="kkk">Details</a>
+        </div>
+        <div class="dress-card" id="pk">
+            <img src="./task5.jpeg" alt="Dress 3">
+            <h2>TechnoQuiz</h2>
+            <br>
+            <p></p>
+            <a href="./dress5.html"class="dress-card" id="kku">Details</a>
+        </div>
+        <div class="dress-card" id="pk">
+            <img src="./task6.jpeg" alt="Dress 3">
+            <h2>Robo Soccer</h2>
+            <br>
+            <p></p>
+            
+            <a href="./dress6.html"class="dress-card" id="kku">Details</a>
+        </div>
+        <div class="dress-card" id="pk">
+            <img src="./task7.jpeg" alt="Dress 3">
+            <h2>BGMI </h2>
+            <p></p>
+            
+            <a href="./dress7.html"class="dress-card" id="kku">Details</a>
+        </div>
+        <div class="dress-card" id="ck">
+            <img src="./task8.jpeg" alt="Dress 3">
+            <h2>     Line
+                Follower </h2>
+            <p></p>
+            
+            <a href="./dress7.html"class="dress-card" id="kku">Details</a>
+        </div>
+        <div class="dress-card" id="ck">
+            <img src="./task9.jpeg" alt="Dress 3">
+            <h2>TECH-JAM</h2>
+            <p></p>
+            
+            <a href="./dress7.html"class="dress-card" id="kku">Details</a>
+        </div>
+    </div>
+   
+
+      </body>
+
+</html>
